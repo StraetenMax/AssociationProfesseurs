@@ -18,5 +18,29 @@ public class Specialite {
 	}
 	
 	// accesseurs mutateurs
+	public int getId(){
+		return id;
+	}
+	public void setId(int xId){
+		id = xId;
+	}
+	public String getCode(){
+		return code;
+	}
+	public void setCode(String xCode){
+		code = xCode;
+	}
+	public String getLibelle(){
+		return libelle;
+	}
+	public void setLibelle(String xLibelle){
+		libelle = xLibelle;
+	}
+	
+	//méthodes
+	public String toString(){
+		return "Id : "+this.getId()+" Code : "+this.getCode()+" Libelle : "+this.getLibelle();
+	}
+	
 	
 }
