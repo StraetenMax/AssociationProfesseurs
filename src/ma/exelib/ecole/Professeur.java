@@ -8,18 +8,18 @@ public class Professeur {
 	private String telephone;
 	private String email;
 	private Specialite specialite;
+	private static int count;
 	
 	//constructeurs
 	public Professeur(){
-		id = 0;
 		nom = "";
 		prenom = "";
 		telephone = "";
 		email = "";
 		specialite = null;
 	}
-	public Professeur(int cId, String cNom, String cPrenom, String cTelephone, String cEmail, Specialite cSpecialite){
-		id = cId;
+	public Professeur(String cNom, String cPrenom, String cTelephone, String cEmail, Specialite cSpecialite){
+		id = ++count;
 		nom = cNom;	
 		prenom = cPrenom;
 		telephone = cTelephone;
@@ -43,9 +43,12 @@ public class Professeur {
 		public String getEmail(){
 			return email;
 		}
+		public Specialite getSpecialite(){
+			return specialite;
+		}
 		
-		public void setId(int xId){
-			id = xId;
+		public void setId(int id){
+			id = ++count;
 		}
 		public void setNom(String xNom){
 			nom = xNom;
@@ -58,6 +61,9 @@ public class Professeur {
 		}
 		public void setEmail(String xEmail){
 			email = xEmail;
+		}
+		public void setSpecialite(Specialite xSpecialite){
+			specialite = xSpecialite;
 		}
 		
 		//méthodes
