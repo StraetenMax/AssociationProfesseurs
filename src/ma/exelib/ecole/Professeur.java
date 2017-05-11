@@ -22,6 +22,43 @@ public class Professeur {
 	}
 	
 	//accesseurs mutateurs
-	
+		public int getId(){
+			return id;
+		}		
+		public String getNom(){
+			return nom;
+		}
+		public String getPrenom(){
+			return prenom;
+		}
+		public String getTelephone(){
+			return telephone;
+		}
+		public String getEmail(){
+			return email;
+		}
+		
+		public void setId(int xId){
+			id = xId;
+		}
+		public void setNom(String xNom){
+			nom = xNom;
+		}
+		public void setPrenom(String xPrenom){
+			prenom = xPrenom;
+		}
+		public void setTelephone(String xTelephone){
+			telephone = xTelephone;
+		}
+		public void setEmail(String xEmail){
+			email = xEmail;
+		}
+		
+		//méthodes
+		public String toString(){
+			return "Id : "+this.getId()+" Nom : "+this.getNom()+" Prénom : "+this.getPrenom()+" Téléphone : "+this.getTelephone()+" Email : "+this.getEmail();
+		}
+		
+		
 	
 }
