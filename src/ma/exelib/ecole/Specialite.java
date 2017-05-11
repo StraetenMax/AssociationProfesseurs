@@ -4,25 +4,26 @@ public class Specialite {
 	//propriétés
 	private int id;
 	private String code, libelle;
+	private static int count;
 	
 	//constructeurs
 	public Specialite(){
-		id = 0;
 		code = "";
 		libelle = "";
 	}
-	public Specialite(int cId, String cCode, String cLibelle){
-		id = cId;
+	public Specialite(String cCode, String cLibelle){
+		id = ++count;
 		code = cCode;
 		libelle = cLibelle;
+		
 	}
 	
 	// accesseurs mutateurs
 	public int getId(){
 		return id;
 	}
-	public void setId(int xId){
-		id = xId;
+	public void setId(int Id){
+		id = ++count;
 	}
 	public String getCode(){
 		return code;
@@ -39,7 +40,7 @@ public class Specialite {
 	
 	//méthodes
 	public String toString(){
-		return "Id : "+this.getId()+" Code : "+this.getCode()+" Libelle : "+this.getLibelle();
+		return " Code : "+this.getCode()+" Libelle : "+this.getLibelle();
 	}
 	
 	

@@ -68,7 +68,7 @@ public class Professeur {
 		
 		//méthodes
 		public String toString(){
-			return "Id : "+this.getId()+" Nom : "+this.getNom()+" Prénom : "+this.getPrenom()+" Téléphone : "+this.getTelephone()+" Email : "+this.getEmail();
+			return " Nom : "+this.getNom()+" Prénom : "+this.getPrenom()+" Téléphone : "+this.getTelephone()+" Email : "+this.getEmail();
 		}
 		
 		
