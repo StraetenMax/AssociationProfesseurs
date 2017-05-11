@@ -3,7 +3,11 @@ package ma.exelib.ecole;
 public class Professeur {
     //propriétés
 	private int id;
-	private String nom, prenom, telephone, email;
+	private String nom; 
+	private String prenom;
+	private String telephone;
+	private String email;
+	private Specialite specialite;
 	
 	//constructeurs
 	public Professeur(){
@@ -12,13 +16,15 @@ public class Professeur {
 		prenom = "";
 		telephone = "";
 		email = "";
+		specialite = null;
 	}
-	public Professeur(int cId, String cNom, String cPrenom, String cTelephone, String cEmail){
+	public Professeur(int cId, String cNom, String cPrenom, String cTelephone, String cEmail, Specialite cSpecialite){
 		id = cId;
 		nom = cNom;	
 		prenom = cPrenom;
 		telephone = cTelephone;
 		email = cEmail;
+		specialite = cSpecialite;
 	}
 	
 	//accesseurs mutateurs
